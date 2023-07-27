@@ -24,3 +24,9 @@ Api setup is split in 3 files per entities:
  - `config/api/filters/foo.yaml`
 
 Use `.env.local` & `.env.test` for development & testing purposes.
+> at least setup DATABASE_URL
+
+Doctrine:
+ - use `bin/console --env=test ...` to interact with test database (migrations & fixtures)
+ - use `bin/console ...` to interact with dev database (migrations & fixtures)
+ - default configuration suffix test database with _test
