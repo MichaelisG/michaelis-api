@@ -1,5 +1,8 @@
 resources:
   App\Entity\Foo:
+    formats:
+      json: ['application/json']
+      jsonld: ['application/ld+json']
     normalizationContext:
       groups: ['foo:read', 'foo:read:collection']
     denormalizationContext:
