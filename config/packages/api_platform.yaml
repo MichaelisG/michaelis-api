@@ -1,0 +1,23 @@
+api_platform:
+    # this one is mandatory to use yaml files as a source for our api setup
+    mapping:
+        paths:
+            - '%kernel.project_dir%/config/api/resources' # yaml or xml directory configuration
+
+    # formats:
+    #     json:   ['application/json']
+    #     jsonld: ['application/ld+json']
+    #     csv:    ['text/csv']
+
+    # pagination on a general level vs collection level, it goes one without the other.
+    defaults:
+        pagination_partial: false
+        pagination_enabled: true
+        pagination_items_per_page: 25
+        pagination_client_enabled: true
+        pagination_client_items_per_page: true
+
+    collection:
+        pagination:
+            enabled_parameter_name: pagination
+            items_per_page_parameter_name: itemsPerPage
