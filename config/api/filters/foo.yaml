@@ -1,0 +1,8 @@
+services:
+    foo.search_filter:
+        parent: 'api_platform.doctrine.orm.search_filter'
+        arguments: [ { id: 'exact', code: 'iexact', label: 'ipartial' } ]
+        tags:  [ 'api_platform.filter' ]
+        autowire: false
+        autoconfigure: false
+        public: false

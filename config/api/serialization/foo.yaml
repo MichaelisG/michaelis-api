@@ -1,0 +1,8 @@
+App\Entity\Foo:
+  attributes:
+    id:
+      groups: ['foo:read', 'foo:read:collection']
+    code:
+      groups: ['foo:read', 'foo:read:collection', 'foo:write']
+    label:
+      groups: ['foo:read', 'foo:read:collection', 'foo:write']
