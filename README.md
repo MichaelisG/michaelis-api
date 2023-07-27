@@ -30,3 +30,6 @@ Doctrine:
  - use `bin/console --env=test ...` to interact with test database (migrations & fixtures)
  - use `bin/console ...` to interact with dev database (migrations & fixtures)
  - default configuration suffix test database with _test
+
+Tests:
+> to be done!
