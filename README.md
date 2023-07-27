@@ -14,9 +14,9 @@ Install runtime dependencies:
 >`composer require orm api`
 
 Setup the application:
-See `config/packages/api_platform.yaml` for resources setup
-See `config/packages/framwork.yaml` for serialization setup
-See `config/services.yaml` for filter setup
+ - See `config/packages/api_platform.yaml` for resources setup
+ - See `config/packages/framwork.yaml` for serialization setup
+ - See `config/services.yaml` for filter setup
 
 Api setup is split in 3 files per entities:
  - `config/api/resources/foo.yaml`
