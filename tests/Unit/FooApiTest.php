@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Tests\Unit\Entity;
+namespace App\Tests\Unit;
 
 use App\Entity\Foo;
 use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
 use Hautelook\AliceBundle\PhpUnit\RefreshDatabaseTrait;
 
-class FooTest extends ApiTestCase
+class FooApiTest extends ApiTestCase
 {
     use RefreshDatabaseTrait;
 
