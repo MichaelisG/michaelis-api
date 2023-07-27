@@ -1,0 +1,4 @@
+App\Entity\Foo:
+  foo_{1..10}:
+    code: <isbn10()>
+    label: <words(3, true)>
