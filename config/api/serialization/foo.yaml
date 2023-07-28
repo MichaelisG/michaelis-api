@@ -1,8 +1,13 @@
 App\Entity\Foo:
   attributes:
     id:
-      groups: ['foo:read', 'foo:read:collection']
+      groups: ['foo:read', 'foo:read:collection', 'foo:export:collection']
     code:
-      groups: ['foo:read', 'foo:read:collection', 'foo:write']
+      groups: ['foo:read', 'foo:read:collection', 'foo:write', 'foo:export:collection']
     label:
-      groups: ['foo:read', 'foo:read:collection', 'foo:write']
+      groups: ['foo:read', 'foo:read:collection', 'foo:write', 'foo:export:collection']
+    exportedAt:
+      groups: ['foo:export:collection']
+    base64:
+      groups: ['foo:read:collection', 'foo:export:collection']
+
