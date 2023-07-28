@@ -4,7 +4,7 @@ resources:
       json: ['application/json']
       jsonld: ['application/ld+json']
     normalizationContext:
-      groups: ['foo:read', 'foo:read:collection']
+      groups: ['foo:read']
     denormalizationContext:
       groups: ['foo:write']
     operations:
@@ -20,3 +20,17 @@ resources:
             groups: ['foo:read']
         ApiPlatform\Metadata\Delete: ~
         ApiPlatform\Metadata\Put: ~
+        foo_export:
+          class: ApiPlatform\Metadata\GetCollection
+          method: GET
+          uriTemplate: /export_foos
+          controller: ApiPlatform\Action\PlaceholderAction
+          formats:
+            csv: ['text/csv']
+          normalizationContext:
+            groups: ['foo:export:collection']
+          paginationEnabled: false
+          filters: ['foo.search_filter']
+          # output: App\Dto\FooDto
+          # processor: App\State\FooExportProcessor
+          # provider: App\State\FooExportProvider

@@ -47,4 +47,15 @@ class Foo
 
         return $this;
     }
+
+    public function getExportedAt(): ?\DateTimeImmutable
+    {
+        return new \DateTimeImmutable();
+    }
+
+    public function getBase64(): ?string
+    {
+        return base64_encode($this->id.'#'.$this->code.'#'.$this->label);
+    }
+
 }
