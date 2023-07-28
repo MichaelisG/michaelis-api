@@ -32,4 +32,11 @@ Doctrine:
  - default configuration suffix test database with _test
 
 Tests:
-> to be done!
+
+Load data to test:
+> `bin/console --env=test hautelook:fixtures:load`
+
+Launch the tests:
+> `bin/phpunit`
+
+Check `tests/Unit/FooApiTest.php` for examples.
